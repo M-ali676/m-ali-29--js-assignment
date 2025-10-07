@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login & Signup</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="form-box">
+      <h2 id="form-title">Login</h2>
+      <form id="form">
+        <div class="input-group">
+          <label>Email</label>
+          <input type="email" required />
+        </div>
+        <div class="input-group">
+          <label>Password</label>
+          <input type="password" id="password" required />
+        </div>
+        <div class="input-group checkbox">
+          <input type="checkbox" onclick="togglePassword()" />
+          <label class="mount">Show Password</label>
+        </div>
+        <button type="submit" id="submit-btn">Login</button>
+        <p class="switch">
+          Don’t have an account? <span onclick="toggleForm()">Signup</span>
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <script src="aap.js"></script>
+</body>
+</html>
